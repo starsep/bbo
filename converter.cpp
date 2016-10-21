@@ -11,7 +11,7 @@ private:
 		"hearts",
 		"diamonds",
 		"clubs",
-		"pc"
+		"hcp"
 	};
 public:
 	Constraint(const std::string &s) {
@@ -71,5 +71,5 @@ int main() {
 	std::string input;
 	std::cin >> input;
 	ConstraintSet c(input);
-	std::cout << c.toString("N") << std::endl;;
+	std::cout << c.toString("north") << std::endl;;
 }
