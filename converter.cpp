@@ -67,9 +67,10 @@ public:
 	}
 };
 
-int main() {
+int main(int argc, char **argv) {
+	std::string hand = argc > 1 ? std::string(argv[1]) : "north";
 	std::string input;
 	std::cin >> input;
 	ConstraintSet c(input);
-	std::cout << c.toString("north") << std::endl;;
+	std::cout << c.toString(hand) << std::endl;;
 }
